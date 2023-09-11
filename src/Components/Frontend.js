@@ -6,6 +6,7 @@ import Card from './Card';
 
 export default function Frontend() {
     const [loading, setLoading] = useState(true);
+    // below code is used to hide the loader after the page is loaded
     useEffect(() => {
         const hideLoading = () => {
             setTimeout(() => {
@@ -19,6 +20,7 @@ export default function Frontend() {
     }, []);
     return (
         <div className="App">
+            {/* below is the loader component which will be shown till the page is loaded */}
             {loading ? (<Loader />) : (<Card />)}
         </div>
 

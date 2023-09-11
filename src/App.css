@@ -47,6 +47,11 @@ h1 {
   margin: 30px 0px;
 }
 
+h6 {
+  font-family: 'Press Start 2P', cursive;
+  margin: 10px 0px;
+}
+
 .card {
   margin: 0px auto;
   width: 18rem;
