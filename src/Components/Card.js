@@ -16,7 +16,7 @@ export default function Card() {
             var y = document.getElementById("social");
             y.style.display = "block";
             setQrCode(dataURL);
-
+            document.getElementById("toast").style.display = "block";
         }
         else {
             setUrl('Enter a valid url!!!!')
@@ -68,7 +68,7 @@ export default function Card() {
                                 </input>
                                 <button className="btn-12" onClick={generateQRCode}><span>Generate QR!</span></button>
                             </div>
-
+                            {/* social media addon */}
                             <div className="social" id='social'>
                                 <em>"Isn't it stunning&#128525;? Send me some&#128151; by connecting with me on social media."</em>
                                 <div className='flex-container'>
@@ -98,10 +98,33 @@ export default function Card() {
                                 </div>
                                 <button className="ui-btn" onClick={toggle} ><span>Generate More!</span></button>
                             </div>
+
                         </div>
                     </div>
                 </div>
+                {/* Toast add on */}
+                <div className="toast" id='toast' role="alert" aria-live="assertive" aria-atomic="true">
+                    <div className="toast-header">
+                        <strong className="me-auto">QR Code Generator</strong>
+                        <button
+                            type="button"
+                            className="btn-close"
+                            data-bs-dismiss="toast"
+                            aria-label="Close"
+                            onClick={() => { document.getElementById("toast").style.display = "none"; }}
+                        />
+                    </div>
+                    <div className="toast-body">
+                        <em>"Congratulations, your personalised QR Code has been generated, Scan here or click on the Button below to download it and share it with your friends." </em>
+                        <button className="button">
+                            <span className="button-content"><a href={qrCode} download >Download QR!</a></span>
+                        </button>
+                    </div>
+                </div>
+
+
             </div>
+
         </>
     )
 }
