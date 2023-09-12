@@ -9,7 +9,7 @@ export default function Card() {
     const generateQRCode = () => {
         const qr_png = qr.imageSync(url, { type: 'png' });
         const dataURL = `data:image/png;base64,${qr_png.toString('base64')}`;
-        if (url.includes('https://www') && ('.com')) {
+        if (url.includes('https')) {
             document.getElementsByClassName('input')[0].style.border = '2px solid #8707ff';
             document.getElementsByClassName('input')[0].style.color = '#8707ff';
             var x = document.getElementById("generate");
