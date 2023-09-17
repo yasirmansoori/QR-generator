@@ -40,11 +40,13 @@
 
 body {
   background-color: plum;
+  overflow: hidden;
 }
 
 h1 {
   font-family: 'Press Start 2P', cursive;
-  margin: 30px 0px;
+  /* margin: 30px 0px; */
+  margin: 30px 0px 0px 0px;
 }
 
 h6 {

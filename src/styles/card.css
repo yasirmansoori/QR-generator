@@ -328,6 +328,7 @@ a {
     right: 0;
   }
 }
+
 /* generate more button end */
 
 /* toast */
@@ -337,6 +338,7 @@ a {
   bottom: 0px;
   margin: 0px 10px 10px 0px;
 }
+
 /* toast end */
 
 /* download qr button */
@@ -510,4 +512,145 @@ strong {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+
 /* download qr button end */
+
+/* Have an insue button */
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 97.5%;
+  padding: 0px 20px 0px 0px;
+  gap: 8px;
+  height: 34px;
+  width: 200px;
+  border: none;
+  /* translate: 160px; */
+  background: #5e41de33;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #5D41DE;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+#button:hover {
+  background: #5e41de4d;
+  translate: -150px;
+  transition: translate 0.5s ease-in-out;
+
+}
+
+#button:hover .svg-icon {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Have an insue button end */
+
+/* form submit in modal  */
+.modal-dialog {
+  text-align: start;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px !important;
+}
+
+form :placeholder-shown {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
+}
+
+form input, textarea, button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px !important;
+}
+
+form button:nth-child(2) {
+  margin-left: 10px;
+}
+
+/* form submit in modal end */
+.box {
+  width: 140px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
