@@ -72,8 +72,8 @@ export default function Card() {
                         <div className="modal-body">
                             <form action="https://formsubmit.co/yasir.mansoori000@gmail.com" method="POST">
                                 <div className="mb-3">
-                                    <label htmlFor="exampleInputEmail1" className="form-label">Enter Your Full Name</label>
-                                    <input type="email" className="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" placeholder='John Doe' />
+                                    <label htmlFor="exampleInputName" className="form-label">Enter Your Full Name</label>
+                                    <input type="name" className="form-control" id="exampleInputName" name="name" aria-describedby="nameHelp" placeholder='John Doe' />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
@@ -82,7 +82,7 @@ export default function Card() {
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputurl" className="form-label">URL: </label>
-                                    <input type="email" className="form-control" id="exampleInputurl" name="url" aria-describedby="emailHelp" placeholder='https://www.example.com' />
+                                    <input type="url" className="form-control" id="exampleInputurl" name="url" aria-describedby="urlHelp" placeholder='https://www.example.com' />
                                 </div>
                                 <div className="mb-3">
                                     <label for="exampleFormControlTextarea1" className="form-label">Report your issue</label>
