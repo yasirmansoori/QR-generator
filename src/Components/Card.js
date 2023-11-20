@@ -70,7 +70,7 @@ export default function Card() {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-body">
-                            <form action="https://formsubmit.co/yasir.mansoori000@gmail.com" method="POST">
+                            <form action="https://formsubmit.co/be5a4c10ce3abbd4180c9482941a6c39" method="POST">
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputName" className="form-label">Enter Your Full Name</label>
                                     <input type="name" className="form-control" id="exampleInputName" name="name" aria-describedby="nameHelp" placeholder='John Doe' />
